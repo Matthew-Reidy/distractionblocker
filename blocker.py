@@ -1,14 +1,26 @@
-import time
+#windows client
+
 import subprocess
 class DistractionBlocker:
-    def set_batch():
+    def __init__(self, time_interval, commands):
+        self.time_interval = time_interval
+        self.commands=commands
+    
+    def set_batch(self): #creates batch file or appends new blocked sites to a batch file
         print("enter the urls of the sites you would like blocked")
-        commands = input()
-        blacklist = open('C:\Windows\System32\drivers\etc', 'w')
-        blacklist.write(commands)
-        blacklist.close()
-    def set_timer():    
-        time_durration= input
+        blacklist = open("C:\Windows\System32\drivers\etc", "a")
+        blacklist.write('''@echo off
+                         set hostspath=%windir%\System32\drivers\etc\hosts\
+                         echo 127.0.0.1''' + self.commands + '''>> %hostspath%
+                         exit
+                         '''
+                         )
+    def time_cleaner():
+        self.time_interval    
     def run_batch(time_durration):
         subprocess.call(['C:\Windows\System32\drivers\etc\blacklist.bat'])
+
+
+process = DistractionBlocker(60, "www.facebook.com")
+print(process)
 
