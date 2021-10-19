@@ -10,6 +10,9 @@ Interested in contributing to this project? fork a respository and suggest impro
 
 
 Contact me
+
 Email: matthewreidy5@gmail.com
+
 Twitter: https://twitter.com/MR9734127939
+
 LinkedIn: https://www.linkedin.com/in/matthew-reidy-6a6ab2166/
