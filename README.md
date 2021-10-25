@@ -16,3 +16,7 @@ Email: matthewreidy5@gmail.com
 Twitter: https://twitter.com/MR9734127939
 
 LinkedIn: https://www.linkedin.com/in/matthew-reidy-6a6ab2166/
+
+#  trouble shooting
+
+If the batch script to revert the black list does not work go into system32\drivers\etc open hosts file with notepad++ and manually delete until a bug fix is released
