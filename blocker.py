@@ -28,6 +28,18 @@ class DistractionBlocker:
      if start >= durration:
         blacklist.kill()
         
-
-DistractionBlocker(60, "www.facebook.com")
-
+class user:
+    def input():
+     loop = True
+     while loop:
+        time = input()
+        website= input()
+        DistractionBlocker(time, website)
+        print("would you like to add another site? (Y, N)")
+        choice = input()
+        if(choice == 'N'):
+            loop = False
+        elif(choice=='Y'):
+             continue
+            
+        
