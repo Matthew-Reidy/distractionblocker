@@ -32,14 +32,12 @@ class user:
     def input():
      loop = True
      while loop:
-        time = input()
-        website= input()
-        DistractionBlocker(time, website)
+        DistractionBlocker(int(input("Enter a time durration:" )), input("enter the website you would like to block:"))
         print("would you like to add another site? (Y, N)")
         choice = input()
         if(choice == 'N'):
             loop = False
         elif(choice=='Y'):
-             continue
+             DistractionBlocker(int(input("Enter a time durration:" )), input("enter the website you would like to block:"))
             
         
